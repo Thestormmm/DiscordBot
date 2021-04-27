@@ -1,4 +1,4 @@
-# DiscordBot
+# StormModerationBot
 # GameHubBot is a french moderation, using discord bot completly programmed with NodeJS.
 # User have a big number of commands :
 # Admin commands :
