@@ -1,4 +1,5 @@
 ## StormModerationBot is a french moderation, using discord bot completly programmed with NodeJS.
+### It sends "Welcome" and "Goodbye" messages to every user that enters and lefts the discord server by sending **Embeds** with his/her informations. 
 ### User have a big number of commands :
 #### Admin commands :
 1. Ban @User :
