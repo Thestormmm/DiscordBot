@@ -19,7 +19,7 @@ client.on('guildMemberAdd', user =>{ //Join d'un joueur
     .setDescription(":tada: Bienvenue à " + user.user.username + " sur le serveur **" +user.guild.name + "**")
     .setFooter("Nous sommes désormais " + user.guild.memberCount)
     .setColor("0df605")
-    user.guild.channels.get("635985485784678432").send(embed)
+    user.guild.channels.get("YOUR DISCORD CHANNEL ID HERE").send(embed)
 
 })
 
@@ -29,7 +29,7 @@ client.on('guildMemberRemove', user =>{ //Leave d'un joueur
     .setDescription(":cry: " + user.user.username + " a quitté le serveur **" +user.guild.name + "**...C'était qui déjà lui ?")
     .setFooter("Nous sommes désormais " + user.guild.memberCount)
     .setColor("e70d0d")
-    user.guild.channels.get("635985485784678432").send(embed)
+    user.guild.channels.get("YOUR DISCORD CHANNEL ID HERE").send(embed)
 
 })
 
