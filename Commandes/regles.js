@@ -7,36 +7,36 @@ module.exports.run = (client, message, args) =>{
             color: 0x0c1cff,
             author:{ 
                
-                name: `Règlements du serveur ! `
+                name: `Server Rules ! `
             },
             fields: [{
                 name: ":one:",
-                value:"Tout message incitant à la haine ou contenant une insulte raciste, homophobe, religieuse ou autre est interdit (Suppression du message + Warn ou ban selon le message envoyé)"
+                value:"Any message inciting hatred or containing a racist, homophobic, religious or other insult is prohibited !"
             },{
                 name: ":two:",
-                value: "Toute menace que ce soit physique ou technique n'est tolérée sur le serveur (7 jours de ban).",
+                value: "Any threat, whether physical or technical, is not tolerated on the server."
             },{
                 name: ":three:",
-                value: "La diffusion d'informations personnelles d'un membre est interdite et passible d'une très lourde sanction (Ban définitif)."
+                value: "The distribution of personal information of a member is prohibited and liable to a very heavy penalty."
             },{
                 name: ":four:",
-                value: "Le spam n'est pas toléré. Évite d'envoyer le même message à répétitions ou d'utiliser trop d'émojis ou de majuscules dans le même message (Warn)."
+                value: "Spam is not tolerated. Avoid sending the same message repeatedly or using too many emojis or capital letters in the same message."
             },{
                 name: ":five:",
-                value: "Les pubs sur d'autres serveurs discord est interdite et sanctionnée d'une suppression de la pub avec un warn. Par contre la pub pour autre contenu (Video Youtube par exemple) est autorisée dans le salon #pubs"
+                value: "Ads on other discord servers are prohibited and sanctioned by removal of the ad with a warn. On the other hand, advertising for other content (Youtube Video for example) is authorized in the #pubs room."
             },{
                 name: ":six:",
-                value: "Les liens de sites X, putes à clic, hameçonnage sont interdits sur le serveur (Suppression du lien + Ban 7 jours )."
+                value: "Links from X sites, clickbait, phishing are prohibited on the server"
             },{
                 name: ":seven:",
-                value: "Les avatars discord de type sexuelles, rasciste ou insultante sont interdit sur notre serveur (Demande de changement de l'avatar puis ban si la personne en question refuse) "
+                value: "Discord avatars of the sexual, rascist or insulting type are prohibited on our server (Request to change the avatar then ban if the person in question refuses)"
             },{
                 name: "Informations :",
-                value: "3 warns = ban 7j / 3 bans 7j = ban permanant \n Ces règles peuvent être modifiés par les admins du serveur ! \n Nous te souhaitons un bon séjour parmis nous et espère te voir régulièrement !" 
+                value: "3 warns = 7d ban / 3 7d bans = permanent ban \n These rules can be modified by the server admins! \n We wish you a good stay with us and hope to see you regularly!" 
             }],
             thumbnail: { url: client.user.avatarURL },
             footer:
-                "Vous pouvez accepter le règlement en appyant sur :white_check_mark: pour acceder au serveur discord !"
+                "You can accept the payment by clicking on :white_check_mark: to access the discord server!"
             
             
         }

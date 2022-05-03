@@ -1,13 +1,13 @@
 const Discord = require("discord.js");
 
 module.exports.run = (client, message, args) => {
-    if (!message.guild.member(message.author).hasPermission('MANAGE_MESSAGES')) { return message.channel.send('Vous n\'avez pas les permissions !'); }
-    if (!args[0]) { return message.channel.send('Vous devez spécifier un nombre de messages à supprimer !'); }
-    else if (isNaN(args[0])) { return message.channel.send('Veuillez spécifier un nombre !'); }
+    if (!message.guild.member(message.author).hasPermission('MANAGE_MESSAGES')) { return message.channel.send('You don\' have the permission !'); }
+    if (!args[0]) { return message.channel.send('You have to write the number of messages to clear !'); }
+    else if (isNaN(args[0])) { return message.channel.send('You have to write a **number** !'); }
                                                                               
         message.channel.bulkDelete(args[0])
             .then((messages) => {
-                message.channel.send(`**${messages.size}** messages ont été supprimés !`);
+                message.channel.send(`**${messages.size}** messages have been deleted !`);
             });
 };
 

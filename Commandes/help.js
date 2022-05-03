@@ -6,17 +6,17 @@ module.exports.run = (client, message, args) => {
             color:0x12c5e0,
             author: {
                 icon_url: message.author.avatarURL ,
-                name: `Les commandes de ${client.user.username}`
+                name: `Commands of ${client.user.username}`
             },
-            description: "Voici toutes mes commandes utiles ! Pour plus d'information sur le bot vous pouvez uiliser la commande infos",
+            description: "There is all my useful commands ! For more information about me just type the command info",
             fields:[{
-                name:":pushpin: Administrateurs",
+                name:":pushpin: Admins",
                 value:"ban/clear/kick",
             },{
-                name:":pencil: Moderateur",
+                name:":pencil: Moderators",
                 value:"kick/clear"
             },{
-                name:":video_game: Joueurs",
+                name:":video_game: Players",
                 value:"help/infos/ping/regles"
             }],
             

@@ -1,18 +1,18 @@
 const Discord = require('discord.js');
 
 module.exports.run = (client, message, args) => {
-    if (!message.guild.member(message.author).hasPermission('BAN_MEMBERS')) { return message.channel.send('Vous n\'avez pas la permission !'); }
-    if (!message.guild.member(client.user).hasPermission('BAN_MEMBERS')) { return message.channel.send('Le bot n\'a pas la permission !'); }
-    if (message.mentions.users.size === 0) { return message.channel.send('Vous devez mentionner un utilisateur !'); }
+    if (!message.guild.member(message.author).hasPermission('BAN_MEMBERS')) { return message.channel.send('You don\' have the permission !'); }
+    if (!message.guild.member(client.user).hasPermission('BAN_MEMBERS')) { return message.channel.send('Discord Bot don\t have the persmission !'); }
+    if (message.mentions.users.size === 0) { return message.channel.send('You have to mention the concerned user !'); }
 
         let banMember = message.guild.member(message.mentions.users.first());
-        if (!banMember) { return message.channel.send('Je n\'ai pas trouvé l\'utilisateur !'); }
+        if (!banMember) { return message.channel.send('I didn\' t find the user !'); }
     
-        message.mentions.users.first().send(`Vous êtes banni du serveur **${message.guild.name}** par ${message.author.username}`)
+        message.mentions.users.first().send(`You have been banned from **${message.guild.name}** by ${message.author.username}`)
             .then(() => {
                 banMember.ban()
                     .then((member) => {
-                        message.channel.send(`**${member.user.username}** est ban Par **${message.author.username}** !`);
+                        message.channel.send(`**${member.user.username}** is banned by **${message.author.username}** !`);
                     })
                         .catch((err) => {
                             if (err) { return console.error(err); }
@@ -22,7 +22,7 @@ module.exports.run = (client, message, args) => {
                     if (error) { console.error(error); }
                         banMember.ban()
                             .then((member) => {
-                                message.channel.send(`${member.user.username} est ban ! Par ${message.author.username}`);
+                                message.channel.send(`${member.user.username} was ban by ${message.author.username}`);
                             })
                                 .catch((err) => {
                                     if (err) { return console.error(err); }
