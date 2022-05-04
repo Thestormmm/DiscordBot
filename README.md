@@ -8,7 +8,7 @@
    > Users with Admin permissions can kick other members from the discord server.
 3. Clear [Number] :
    >  User with Manage message permission can clear message from the chats mentionning the number of messages that they want to clear.
-####User commands :
+#### User commands :
 1. Regles :
    > By typing this command the bot sends a message with all the rules of the discord server.
 2. infos :
